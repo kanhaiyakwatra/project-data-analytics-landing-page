@@ -530,7 +530,7 @@ footer
 {
     position: absolute;
     right: 11px;
-    top: 30%;
+    top: 50%;
 }
 footer
 {
@@ -540,14 +540,23 @@ footer
 {
     flex-basis: 20%;
 }
+
+
 /* min width 1025px and max width 1280px */
+
 @media (min-width:769px) and (max-width:1200px)
 {
     nav, .hero-container, .main-container, .signup-container, .footer-container
     {
         width: 90%;
     }
+    .data-right img
+    {
+        width: 100%;
+    }
 }
+
+
 /* min width 1025px and max width 1280px */
 @media (min-width:769px) and (max-width:1024px)
 {
@@ -585,6 +594,10 @@ footer
     .data-left
     {
         order: 2;
+    }
+    .data-right img
+    {
+        width: 100%;
     }
 }
 
@@ -652,6 +665,19 @@ footer
     }
 }
 
+/* min width 481px and max width 768px */
+
+@media (min-width:481px) and (max-width:768px)
+{
+    header 
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 85%);
+        padding-bottom: 285px;
+    }
+    .testimonial {
+        clip-path: polygon(0 8%, 100% 0, 100% 78%, 0 88%);
+    }
+}
 
 /* max width 480px */
 
@@ -673,6 +699,7 @@ footer
     header 
     {
         padding-bottom: 450px;
+        clip-path: polygon(0 0, 100% 0, 100% 65%, 0 70%);
     }
     .free-trial-btn, .learn-more-btn
     {
@@ -738,5 +765,20 @@ footer
     }
     .ft-6 img {
         top: 50%;
+    }
+    .testimonial {
+        clip-path: polygon(0 7%, 100% 0, 100% 90%, 0 100%);
+    }
+    .testimonial-container
+    {
+        padding:90px 0;
+    }
+    .footer-container
+    {
+        gap:30px;
+    }
+    footer
+    {
+        padding-bottom: 50px;
     }
 }
